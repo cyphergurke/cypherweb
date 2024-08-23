@@ -128,7 +128,7 @@ export function ContactForm({ translate }: any) {
           )}
         </form>
       </div>
-    </section>
+    </section >
   );
 }
 
