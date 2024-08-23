@@ -1,0 +1,103 @@
+{
+  "Hero": {
+    "title": "Cypherweb Development",
+    "subTitle": "Hi, I'm David, a passionate and dedicated software engineer from Germany, specializing in creating cutting-edge web applications with modern technologies.",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "buttonText": "Show my work",
+    "language": "Language"
+  },
+  "About": {
+    "title": "About Me",
+    "text": "I'm David Witten, 30 years old, living in the heart of Germany.\n\n In early 2017, I discovered my passion for software engineering when I came across Bitcoin and started learning web development. From 2018 to 2022, alongside my studies in Physical Technologies (B.Eng.), I developed numerous web applications to master modern React.js and Next.js development, as well as websites for friends and family. In 2020, I launched a SaaS platform, offering a unique cryptographic service for Bitcoin wallets.\n\nIn 2022, I began working as a Blockchain Consultant and Web Developer at SVA System Vertrieb Alexander, a leading German IT system integrator. There, I gained experience with SSI (Self-Sovereign Identity)/Digital Identities and developed several applications utilizing blockchain and advanced authentication and identity methods.\n\nI am deeply passionate about learning new technologies, working on exciting projects, and continually seeking opportunities to enhance my skills. Currently, I'm working remotely and focusing on my own projects. I'm looking forward to collaborating with new people and contributing to the tech community.\n\nI have strong communication and problem-solving skills, excellent time management, and a solid understanding of the English language. I'm also a great listener and a strong team player.\n\nIn August 2024, I finally took the step into self-employment as a freelance web developer.",
+    "communication": "I place great importance on collaborating with my clients and encourage open communication.",
+    "timeZones": "I am very flexible when it comes to communication across different time zones.",
+    "techStack": "I am constantly striving to improve my tech stack.",
+    "passion": "Tech enthusiast with a passion for frontend development.",
+    "specialist": "Specialized in the integration of modern authentication methods, using both centralized and decentralized technologies and protocols.",
+    "startProject": "Would you like to start a project together?",
+    "requestFreelancerProfile": "Request Freelancer Profile",
+    "copyEmail": "Copy my email address",
+    "emailCopied": "Email copied"
+  },
+  "Projects": {
+    "title": "A Selection of my Projects",
+    "BitcoinVanityTitle": "Bitcoin Vanity Address Generator",
+    "BitcoinVanityDesc": "A SaaS that generates trustless Bitcoin addresses with a defined prefix. The world's leading Bitcoin vanity address generator.",
+    "OverStackingFlowTitle": "OverStackingFlow",
+    "OverStackingFlowDesc": "Stack Overflow clone with AI-LLM integration - in development."
+  },
+  "Experience": {
+    "title": "My Experience",
+    "btcProfessional": {
+      "title": "Bitcoin Expert and Crypto Web Developer",
+      "desc": "Bitcoin enthusiast since 2017, owner of Bitcoin Uni since 2019. In 2020, developed a unique SaaS for personalized Bitcoin addresses. Integration of smart contracts into web applications, ranging from NFT marketplaces to DEX."
+    },
+    "intern": {
+      "title": "Web Developer",
+      "desc": "As a web developer at a large German system integrator (SVA), I developed applications for various public sector projects."
+    },
+    "consultant": {
+      "title": "Blockchain/SSI Consultant & Developer",
+      "desc": "As a Blockchain Consultant and Fullstack Developer at SVA, I tested and integrated innovative authentication and digital identity methods (smart contracts and SSI/DID) into web applications and client projects."
+    },
+    "freelancer": {
+      "title": "Fullstack Web Developer",
+      "desc": "Since August 2024, I have been working as a freelance web developer, focusing on the development of innovative web applications using cutting-edge technologies such as React.js and Next.js."
+    }
+  },
+  "Approach": {
+    "title": "My Approach",
+    "phase1": {
+      "title": "Phase 1: Planning & Strategy",
+      "text": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+    },
+    "phase2": {
+      "title": "Phase 2: Development & Progress Update",
+      "text": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+    },
+    "phase3": {
+      "title": "Phase 3: Finalisierung & Launch",
+      "text": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "subTitle": "Send me a Project request!",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your Name",
+      "errorMessage": "Name is required"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "your.email@address.com",
+      "errorMessage": "Email is required",
+      "invalidEmail": "Invalid email address"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Subject (optional)"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Your Message",
+      "errorMessage": "Message is required"
+    },
+    "agreeToTerms": {
+      "label": "I agree to the terms and conditions",
+      "errorMessage": "You must agree to the terms and conditions"
+    },
+    "button": "Send",
+    "successMessage": "Email sent successfully!",
+    "failedMessage": "Failed to send email.",
+    "errorMessage": "An error occurred. Please try again later."
+  },
+  "Footer": {
+    "getintouch": "Let's get in touch"
+  }
+}

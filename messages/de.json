@@ -1,0 +1,103 @@
+{
+  "Hero": {
+    "title": "Cypherweb Development",
+    "subTitle": "Hallo, ich bin David, ein leidenschaftlicher und engagierter Softwareentwickler aus Deutschland, spezialisiert auf die Entwicklung moderner Webanwendungen mit neuesten Technologien.",
+    "navigation": {
+      "home": "Home",
+      "about": "Über Mich",
+      "projects": "Projekte",
+      "contact": "Kontakt"
+    },
+    "buttonText": "Zeige meine Arbeit",
+    "language": "Sprache"
+  },
+  "About": {
+    "title": "Über Mich",
+    "text": "Ich bin David Witten, 30 Jahre alt und lebe im Herzen Deutschlands. \n\nAnfang 2017 entdeckte ich meine Leidenschaft für Softwareentwicklung, als ich Bitcoin kennenlernte und begann, Webentwicklung zu erlernen. Von 2018 bis 2022, parallel zu meinem Studium der Physikalischen Technologien (B.Eng.), entwickelte ich zahlreiche Webanwendungen, um mich in moderner React.js- und Next.js-Webentwicklung weiterzubilden, sowie einige Webseiten für Freunde und Familie. Im Jahr 2020 startete ich einen SaaS-Dienst, einen einzigartigen kryptografischen Service für Bitcoin-Wallets.\n\nIm Jahr 2022 trat ich eine Stelle als Blockchain Consultant und Webentwickler bei SVA System Vertrieb Alexander, einem großen deutschen IT-Systemintegrator, an. Dort kam ich mit SSI (Self-Sovereign Identity)/Digitalen Identitäten in Berührung und entwickelte mehrere Anwendungen mit Blockchain und fortschrittlichen Authentifizierungs- und Identitätsmethoden.\n\nIch bin sehr leidenschaftlich darin, neue Technologien zu erlernen, an spannenden Projekten zu arbeiten und immer auf der Suche nach Möglichkeiten, meine Fähigkeiten zu verbessern. Derzeit arbeite ich remote und konzentriere mich auf meine Projekte. Ich freue mich darauf, mit neuen Menschen zusammenzuarbeiten und zur Tech-Community beizutragen.\n\nIch verfüge über starke Kommunikations- und Problemlösungsfähigkeiten, ausgezeichnetes Zeitmanagement und ein gutes Verständnis der englischen Sprache. Außerdem bin ich ein sehr guter Zuhörer und ein großartiger Teamplayer.\n\nIm August 2024 war ich schließlich bereit, den Schritt in die Selbstständigkeit als freiberuflicher Webentwickler zu wagen.",
+    "communication": "Ich lege großen Wert auf die Zusammenarbeit mit meinen Kunden und fördere offene Kommunikation",
+    "timeZones": "Ich bin sehr flexibel, was die Kommunikation in verschiedenen Zeitzonen angeht",
+    "techStack": "Ich versuche ständig, meinen tech stack zu verbessern",
+    "passion": "Technik-Enthusiast mit einer Leidenschaft für Frontend Entwicklung.",
+    "specialist": "Spezialisiert auf die Integration von modernen Authentifizierungs Methoden, mit zentralisierten als auch dezentralisierten Technologien und Protokollen",
+    "startProject": "Möchten Sie ein Projekt gemeinsam starten?",
+    "requestFreelancerProfile": "Freelancer Profil Anfragen",
+    "copyEmail": "E-Mail-Adresse Kopieren",
+    "emailCopied": "Email kopiert"
+  },
+  "Projects": {
+    "title": "Eine kleine Auswahl meiner Projekten",
+    "BitcoinVanityTitle": "BitcoinVanity",
+    "BitcoinVanityDesc": "Ein SaaS der vertrauenslos Bitcoin Adressen mit einem definierten Präfix generiert. Weltweit führender Bitcoin Vanity Adressen Generator",
+    "OverStackingFlowTitle": "OverStackingFlow",
+    "OverStackingFlowDesc": "Stack Overflow Clone mit KI-LLM Integration - in Entwicklung"
+  },
+  "Experience": {
+    "title": "Meine Erfahrungen",
+    "btcProfessional": {
+      "title": "Bitcoin Experte und Crypto Web Entwickler",
+      "desc": "Seit 2017 Bitcoin enthusiast, seit 2019 Innhaber der Bitcoin Uni. 2020 einzigartiger SaaS für personalisierte Bitcoin Adressen. Integration von Smart Contracts in Web anwendungen, von NFT Marketplaces bis hin zur DEX."
+    },
+    "intern": {
+      "title": "Web Entwickler",
+      "desc": "Als Web Entwicker bei einem großen deutschen System Integrator (SVA), habe ich an verschiedenen Projekten für den Öffentlichen Dienst Anwendungen entwickelt."
+    },
+    "consultant": {
+      "title": "Blockchain/SSI Consultant & Developer",
+      "desc": "Als Blockchain Consultant und Fullstack Entwickler ber der SVA habe ich innovative Authentifizierungs und Digitalen Identitäten Methoden (Smart Contracts und SSI/DID) in Webanwendungen erprobt und in Kunden Projekten integriert."
+    },
+    "freelancer": {
+      "title": "Fullstack Web Entwickler",
+      "desc": "Seit August 2024 arbeite ich als freiberuflicher Webentwickler und konzentriere mich auf die Entwicklung innovativer Webanwendungen unter Einsatz modernster Technologien wie React.js und Next.js."
+    }
+  },
+  "Approach": {
+    "title": "Meine Methodik",
+    "phase1": {
+      "title": "Planung & Strategie",
+      "text": "Gemeinsam erarbeiten wir die Ziele Ihrer Website, definieren die Zielgruppe und legen die wichtigsten Funktionen fest. Wir besprechen Themen wie Seitenstruktur, Navigation und Inhaltsanforderungen."
+    },
+    "phase2": {
+      "title": "Entwicklung & Fortschritts-Updates",
+      "text": "Sobald wir den Plan abgestimmt haben, starte ich mit der Entwicklung. Von den ersten Entwürfen bis hin zum fertigen Code halte ich Sie über jeden Schritt auf dem Laufenden."
+    },
+    "phase3": {
+      "title": "Finalisierung & Launch",
+      "text": "Jetzt beginnt die eigentliche Umsetzung! Basierend auf dem genehmigten Design übersetze ich alles in funktionalen Code und baue Ihre Website von Grund auf."
+    }
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subTitle": "Sende mir eine Anfrage",
+    "name": {
+      "label": "Name",
+      "placeholder": "Dein Name",
+      "errorMessage": "Name ist erforderlich"
+    },
+    "email": {
+      "label": "Email Adresse",
+      "placeholder": "deine.email@adresse.de",
+      "errorMessage": "Email ist erforderlich",
+      "invalidEmail": "Ungültige Email Adresse"
+    },
+    "subject": {
+      "label": "Betreff",
+      "placeholder": "Betreff (Optional)"
+    },
+    "message": {
+      "label": "Nachricht",
+      "placeholder": "Deine Nachricht",
+      "errorMessage": "Nachricht ist erforderlich"
+    },
+    "agreeToTerms": {
+      "label": "Ich akzeptiere die Datenschutzverordnung DSGVO",
+      "errorMessage": "Du musst Datenschutzverordnung zustimmen"
+    },
+    "button": "Senden",
+    "successMessage": "Email erfolgreich gesendet!",
+    "failedMessage": "Fehler beim versenden.",
+    "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+  },
+  "Footer": {
+    "getintouch": "Lassen Sie uns Kontakt aufnehmen"
+  }
+}
