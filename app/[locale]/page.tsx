@@ -9,7 +9,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { useTranslations } from 'next-intl';
 import About from "@/components/About";
 import { ContactForm } from "@/components/Contact";
-import MobileMenu from "@/components/MobileMenu";
+import MobileMenu from "@/components/ui/MobileMenu";
 
 
 
