@@ -143,7 +143,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative dark:bg-black-100 bg-slate-300 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 ">
+    <>
       <div className="w-full z-50 sm:hidden block">
         <MobileMenu navItems={navigationItems} translate={heroTranslations} />
       </div>
@@ -159,6 +159,6 @@ export default function Home() {
         <ContactForm translate={contactTranslation} />
         <Footer translate={footerTranslation} />
       </div>
-    </main >
+    </>
   );
 };

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,8 +9,9 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./ModeToggle";
-import Image from "next/image";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./dropdown-menu";
+import { GlobeIcon } from "@radix-ui/react-icons";
+import LanguageToggle from "./LanguageToggle";
 
 export const FloatingNav = ({
   navItems,
@@ -27,13 +28,12 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
 
+
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
         setVisible(true);
       } else {
         if (direction < 0) {
@@ -82,37 +82,8 @@ export const FloatingNav = ({
             <span className=" text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
-        <DropdownMenu >
-          <DropdownMenuTrigger asChild>
-            <button className="border flex text-sm font-medium transition-all duration-500 hover:border-violet-500 relative border-neutral-200 dark:border-white/[0.2] text-white  px-2 py-2 rounded-full">
-              <span className="text-white">
-                <Image src="globe.svg" alt="language" className="filter invert" width={20} height={20} />
-              </span>
-            </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className='pt-4' >
-            <DropdownMenuItem >
-              <Link
-                href="/en"
-                className={cn(
-                  "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500"
-                )}
-              >
-                <span className=" text-sm !cursor-pointer">english</span>
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem >
-              <Link
-                href="/de"
-                className={cn(
-                  "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500"
-                )}
-              >
-                <span className=" text-sm !cursor-pointer">deutsch</span>
-              </Link>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <LanguageToggle />
+
         <ModeToggle />
       </motion.div>
 

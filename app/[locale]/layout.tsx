@@ -40,7 +40,10 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <main className="relative dark:bg-black-100 bg-slate-300 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 ">
+
+              {children}
+            </main>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
