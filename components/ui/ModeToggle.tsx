@@ -47,7 +47,7 @@ export function ModeToggle() {
       <div className="relative inline-block text-left" ref={dropdownRef}>
         <button
           onClick={toggleDropdown}
-          className="border flex text-sm font-medium relative border-neutral-200 transition-all duration-500 hover:border-violet-500   dark:border-white/[0.2] text-white  px-2 py-2 rounded-full"
+          className="border flex text-sm font-medium relative border-neutral-200 transition-all duration-500 hover:border-violet-500     text-white  px-2 py-2 rounded-full"
         >
           <SunIcon className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0   ' />
           <MoonIcon className='absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100  ' />

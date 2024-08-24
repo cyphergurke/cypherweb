@@ -37,7 +37,7 @@ const LanguageToggle = () => {
         <div className="relative inline-block text-left" ref={dropdownRef}>
             <button
                 onClick={toggleDropdown}
-                className="border flex text-sm font-medium relative border-neutral-200 transition-all duration-500 hover:border-violet-500   dark:border-white/[0.2] text-white  px-2 py-2 rounded-full"
+                className="border flex text-sm font-medium relative border-neutral-200 transition-all duration-500 hover:border-violet-500 text-white  px-2 py-2 rounded-full"
             >
                 <GlobeIcon className='h-[1.2rem] w-[1.2rem] ' />
                 <span className="sr-only">Toggle language</span>
