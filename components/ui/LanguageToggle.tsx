@@ -55,20 +55,20 @@ const LanguageToggle = () => {
                     <Link
                         href="/en"
                         className={cn(
-                            "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500 hover:bg-gray-100 rounded-md p-1"
+                            "relative dark:text-white items-center  flex space-x-1 text-black    hover:text-neutral-500 dark:hover:bg-slate-800 rounded-md p-1"
                         )}
                         onClick={toggleDropdown}
                     >
-                        <span className=" text-sm !cursor-pointer">english</span>
+                        english
                     </Link>
                     <Link
                         href="/de"
                         className={cn(
-                            "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500 hover:bg-gray-100 rounded-md p-1"
+                            "relative dark:text-white items-center  flex space-x-1 text-black    hover:text-neutral-500 dark:hover:bg-slate-800 rounded-md p-1"
                         )}
                         onClick={toggleDropdown}
                     >
-                        <span className=" text-sm !cursor-pointer">deutsch</span>
+                        deutsch
                     </Link>
                 </div>
             </div>

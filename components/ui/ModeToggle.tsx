@@ -64,32 +64,32 @@ export function ModeToggle() {
           <div className="py-1">
             <button
               className={cn(
-                "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500 hover:bg-gray-100 rounded-md p-1"
+                "relative dark:text-white items-center  flex space-x-1 text-black    hover:text-neutral-500 dark:hover:bg-slate-800 rounded-md p-1"
               )}
-              onClick={() => { setTheme('light'); toggleDropdown }}
+              onClick={() => { setTheme('light'); toggleDropdown() }}
             >
               Light
             </button>
             <button
               className={cn(
-                "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500 hover:bg-gray-100 rounded-md p-1"
+                "relative dark:text-white items-center  flex space-x-1 text-black    hover:text-neutral-500 dark:hover:bg-slate-800 rounded-md p-1"
               )}
-              onClick={() => { setTheme('dark'); toggleDropdown }}
+              onClick={() => { setTheme('dark'); toggleDropdown() }}
             >
               Dark
             </button>
             <button
               className={cn(
-                "relative dark:text-white items-center  flex space-x-1 text-black   dark:hover:text-neutral-300 hover:text-neutral-500 hover:bg-gray-100 rounded-md p-1"
+                "relative dark:text-white items-center  flex space-x-1 text-black    hover:text-neutral-500 dark:hover:bg-slate-800 rounded-md p-1"
               )}
-              onClick={() => { setTheme('system'); toggleDropdown }}
+              onClick={() => { setTheme('system'); toggleDropdown() }}
             >
               System
             </button>
 
           </div>
         </div>
-      </div>
+      </div >
 
     </>
   );
