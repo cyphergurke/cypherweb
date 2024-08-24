@@ -6,9 +6,17 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const RecentProjects = ({ translate }: any) => {
-
+const RecentProjects = () => {
+  const p = useTranslations('Projects');
+  const translate = {
+    title: p('title'),
+    BitcoinVanityTitle: p('BitcoinVanityTitle'),
+    BitcoinVanityDesc: p('BitcoinVanityDesc'),
+    OverStackingFlowTitle: p('OverStackingFlowTitle'),
+    OverStackingFlowDesc: p('OverStackingFlowDesc')
+  }
 
   const projectsList = projects(translate);
   return (

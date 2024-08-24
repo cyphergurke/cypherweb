@@ -67,15 +67,15 @@
   },
   "Contact": {
     "title": "Kontakt",
-    "subTitle": "Sende mir eine Anfrage",
+    "subTitle": "Senden Sie mir eine Anfrage oder rufen Sie mich an unter: ",
     "name": {
       "label": "Name",
-      "placeholder": "Dein Name",
+      "placeholder": "Ihr Name",
       "errorMessage": "Name ist erforderlich"
     },
     "email": {
       "label": "Email Adresse",
-      "placeholder": "deine.email@adresse.de",
+      "placeholder": "ihre.email@adresse.de",
       "errorMessage": "Email ist erforderlich",
       "invalidEmail": "Ungültige Email Adresse"
     },
@@ -85,12 +85,12 @@
     },
     "message": {
       "label": "Nachricht",
-      "placeholder": "Deine Nachricht",
-      "errorMessage": "Nachricht ist erforderlich"
+      "placeholder": "Ihre Nachricht",
+      "errorMessage": "Die Nachricht ist erforderlich"
     },
     "agreeToTerms": {
-      "label": "Ich akzeptiere die Datenschutzverordnung DSGVO",
-      "errorMessage": "Du musst Datenschutzverordnung zustimmen"
+      "label": "Ich akzeptiere die Datenschutzverordnung",
+      "errorMessage": "Sie müssen der Datenschutzverordnung zustimmen"
     },
     "button": "Senden",
     "successMessage": "Email erfolgreich gesendet!",

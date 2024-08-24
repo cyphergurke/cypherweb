@@ -8,12 +8,28 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import LanguageToggle from './LanguageToggle';
 import { ModeToggle } from './ModeToggle';
+import { navItems } from '@/data';
+import { useTranslations } from 'next-intl';
 
-const MobileMenu = ({ navItems, translate }: any) => {
+
+const MobileMenu = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [hasBackground, setHasBackground] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isOpen, setIsOpen] = React.useState(false);
+    const h = useTranslations('Hero');
+    const translate = {
+        title: h('title'),
+        subTitle: h('subTitle'),
+        navHome: h('navigation.home'),
+        navAbout: h('navigation.about'),
+        navprojects: h('navigation.projects'),
+        navContact: h('navigation.contact'),
+        buttonText: h('buttonText'),
+        language: h('language'),
+    };
+    const translatedNavItems = navItems(translate)
+
     const controlNavbar = () => {
         if (typeof window !== "undefined") {
             if (window.scrollY === 0) {
@@ -52,7 +68,7 @@ const MobileMenu = ({ navItems, translate }: any) => {
                         <Image src="hamburger.svg" alt="Menu" width={40} height={40} className=" filter  invert z-10" />
                     </span>
                 </SheetTrigger>
-                <SheetContent className='bg-gray-600 opacity-90'>
+                <SheetContent className='bg-gray-600 opacity-90 dark:bg-black-100'>
                     <SheetHeader>
 
                         <div className='flex flex-row gap-4 pb-4'>
@@ -64,7 +80,7 @@ const MobileMenu = ({ navItems, translate }: any) => {
                         </SheetTitle>
 
                         <SheetDescription className="  h-screen  flex flex-col gap-y-10  text-center w-full  pt-20">
-                            {navItems.map((navItem: any, idx: number) => (
+                            {translatedNavItems.map((navItem: any, idx: number) => (
                                 <Link
                                     key={`link=${idx}`}
                                     href={navItem.link}

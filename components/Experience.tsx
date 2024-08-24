@@ -2,12 +2,41 @@ import React from "react";
 
 import { Button } from "./ui/MovingBorders";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { workExperience } from "@/data";
 
-const Experience = ({ translate, workExperienceItems }: any) => {
+const Experience = () => {
+
+
+  const w = useTranslations('Experience');
+  const workTranslations = {
+    title: w('title'),
+    btcProfessional: {
+      title: w('btcProfessional.title'),
+      desc: w('btcProfessional.desc'),
+    },
+    intern: {
+      title: w('intern.title'),
+      desc: w('intern.desc'),
+    },
+    consultant: {
+      title: w('consultant.title'),
+      desc: w('consultant.desc'),
+    },
+    freelancer: {
+      title: w('freelancer.title'),
+      desc: w('freelancer.desc'),
+    }
+  }
+
+  const workExperienceItems = workExperience(workTranslations)
+  const e = useTranslations("Experience")
+
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
-        {translate.title}
+        {e('title')}
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

@@ -9,8 +9,26 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import { gridItems, socialMedia } from '@/data';
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const About = ({ translate }: any) => {
+const About = () => {
+
+    const a = useTranslations('About');
+    const translate = {
+        title: a('title'),
+        text: a('text'),
+        communication: a('communication'),
+        timeZones: a('timeZones'),
+        techStack: a('techStack'),
+        passion: a('passion'),
+        specialist: a('specialist'),
+        startProject: a('startProject'),
+        requestFreelancerProfile: a('requestFreelancerProfile'),
+        copyEmail: a('copyEmail'),
+        emailCopied: a('emailCopied'),
+    }
+
+
     const items = gridItems(translate)
     const paragraphs = translate.text.split('\n\n').map((paragraph: any, index: number) => (
         <p key={index}>{paragraph} <br /><br /></p>

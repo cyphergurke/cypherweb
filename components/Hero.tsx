@@ -4,7 +4,20 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import ComputersCanvas from "./canvas/Computers";
 import Image from "next/image";
-const Hero = ({ translate }: any) => {
+import { useTranslations } from "next-intl";
+const Hero = () => {
+  const h = useTranslations('Hero');
+  const translate = {
+    title: h('title'),
+    subTitle: h('subTitle'),
+    navHome: h('navigation.home'),
+    navAbout: h('navigation.about'),
+    navprojects: h('navigation.projects'),
+    navContact: h('navigation.contact'),
+    buttonText: h('buttonText'),
+    language: h('language'),
+  };
+
   return (
     <div className=" md:pt-36 lg:pt-36" id="home">
       <div>

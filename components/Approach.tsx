@@ -3,8 +3,26 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { useTranslations } from "next-intl";
 
-const Approach = ({ translate }: any) => {
+const Approach = () => {
+  const ap = useTranslations('Approach');
+  const translate = {
+    title: ap('title'),
+    phase1: {
+      title: ap('phase1.title'),
+      text: ap('phase1.text'),
+    },
+    phase2: {
+      title: ap('phase2.title'),
+      text: ap('phase2.text'),
+    },
+    phase3: {
+      title: ap('phase3.title'),
+      text: ap('phase3.text'),
+    }
+  }
+
   return (
     <section className="w-full py-20">
       <h1 className="heading">

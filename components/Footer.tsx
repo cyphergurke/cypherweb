@@ -4,10 +4,12 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
-const Footer = ({ translate }: any) => {
+const Footer = () => {
+  const f = useTranslations("Footer")
+
 
   const locale = useLocale();
 
@@ -24,7 +26,7 @@ const Footer = ({ translate }: any) => {
         </p>
         <a href="mailto:david.witten@cypherweb.dev">
           <MagicButton
-            title={translate.getintouch}
+            title={f('getintouch')}
             icon={<FaLocationArrow />}
             position="right"
           />

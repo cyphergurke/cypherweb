@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,25 +9,30 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./ModeToggle";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./dropdown-menu";
-import { GlobeIcon } from "@radix-ui/react-icons";
 import LanguageToggle from "./LanguageToggle";
+import { useTranslations } from "next-intl";
+import { navItems } from "@/data";
 
 export const FloatingNav = ({
-  navItems,
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
   className?: string;
 }) => {
   const [visible, setVisible] = useState(true);
   const { scrollYProgress } = useScroll();
 
-
+  const h = useTranslations('Hero');
+  const heroTranslations = {
+    title: h('title'),
+    subTitle: h('subTitle'),
+    navHome: h('navigation.home'),
+    navAbout: h('navigation.about'),
+    navprojects: h('navigation.projects'),
+    navContact: h('navigation.contact'),
+    buttonText: h('buttonText'),
+    language: h('language'),
+  };
+  const navigationItems = navItems(heroTranslations)
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -70,7 +75,7 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navigationItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
@@ -83,7 +88,6 @@ export const FloatingNav = ({
           </Link>
         ))}
         <LanguageToggle />
-
         <ModeToggle />
       </motion.div>
 

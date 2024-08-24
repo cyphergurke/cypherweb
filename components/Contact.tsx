@@ -9,9 +9,45 @@ import { cn } from "@/lib/utils";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-export function ContactForm({ translate }: any) {
+export function ContactForm() {
   const [formStatus, setFormStatus] = useState({ type: "", message: "" });
+
+  const c = useTranslations('Contact');
+  const translate = {
+    title: c('title'),
+    subTitle: c('subTitle'),
+    name: {
+      label: c('name.label'),
+      placeholder: c('name.placeholder'),
+      errorMessage: c('name.errorMessage')
+    },
+    email: {
+      label: c('email.label'),
+      placeholder: c('email.placeholder'),
+      errorMessage: c('email.errorMessage')
+    },
+    subject: {
+      label: c('subject.label'),
+      placeholder: c('subject.placeholder'),
+    },
+    message: {
+      label: c('message.label'),
+      placeholder: c('message.placeholder'),
+      errorMessage: c('message.errorMessage')
+    },
+    agreeToTerms: {
+      label: c('agreeToTerms.label'),
+      errorMessage: c('agreeToTerms.errorMessage')
+    },
+    button: c('button'),
+    successMessage: c('successMessage'),
+    failedMessage: c('failedMessage'),
+    errorMessage: c('errorMessage')
+  }
+
 
   const contactSchema = z.object({
     name: z.string().min(1, translate.name.errorMessage),
@@ -62,7 +98,9 @@ export function ContactForm({ translate }: any) {
           {translate.title}
         </h2>
         <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-          {translate.subTitle}
+          {translate.subTitle}<Link href="tel:+491715186152" className="mt-5 text-violet-500">
+            +49 171 5186152
+          </Link>
         </p>
 
         <form className="my-8" onSubmit={handleSubmit(onSubmit)}>

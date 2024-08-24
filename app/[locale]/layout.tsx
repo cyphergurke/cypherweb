@@ -5,6 +5,8 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import MobileMenu from "@/components/ui/MobileMenu";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +43,12 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <main className="relative dark:bg-black-100 bg-slate-300 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 ">
-
+              <div className="w-full z-50 sm:hidden block">
+                <MobileMenu />
+              </div>
+              <div className="sm:block hidden">
+                <FloatingNav />
+              </div>
               {children}
             </main>
           </ThemeProvider>
