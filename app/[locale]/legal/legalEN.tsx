@@ -75,18 +75,12 @@ const LegalEN = () => {
       </p>
       <br />
 
-      <p>Cypherweb Development</p>
-      <br />
-      <p>Herzberger Landstraße 110</p>
-      <br />
-      <p>37085 Göttingen</p>
-      <br />
-      <p>Deutschland</p>
-      <br />
-      <p>Phone: +491715186152</p>
-      <br />
-      <p>Email: david@cypherweb.dev</p>
-      <br />
+      <p>Cypherweb Development</p><br />
+      <p>{process.env.ADDR_STREET}</p><br />
+      <p>{process.env.ADDR_ZIP_AND_CITY}</p><br />
+      <p>Deutschland</p><br />
+      <p>Tel.: {process.env.PHONE_NUMBER}</p><br />
+      <p>E-Mail: {process.env.EMAIL_ADDRESS}</p><br />
       <p>Website: cypherweb.dev</p>
       <br />
 

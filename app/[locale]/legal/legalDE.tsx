@@ -58,11 +58,11 @@ const LegalDE = () => {
       <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:</p><br />
 
       <p>Cypherweb Development</p><br />
-      <p>Herzberger Landstraße 110</p><br />
-      <p>37085 Göttingen</p><br />
+      <p>{process.env.ADDR_STREET}</p><br />
+      <p>{process.env.ADDR_ZIP_AND_CITY}</p><br />
       <p>Deutschland</p><br />
-      <p>Tel.: +491715186152</p><br />
-      <p>E-Mail: david@cypherweb.dev</p><br />
+      <p>Tel.: {process.env.PHONE_NUMBER}</p><br />
+      <p>E-Mail: {process.env.EMAIL_ADDRESS}</p><br />
       <p>Website: cypherweb.dev</p><br />
 
       <h4>3. Erfassung von allgemeinen Daten und Informationen</h4>
