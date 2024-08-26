@@ -25,9 +25,9 @@ const Approach = () => {
 
   return (
     <section className="w-full py-20">
-      <h1 className="heading">
+      <h2 className="heading">
         {translate.title}
-      </h1>
+      </h2>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
           title={translate.phase1.title}

@@ -21,9 +21,9 @@ const RecentProjects = () => {
   const projectsList = projects(translate);
   return (
     <div className="py-36" id="projects">
-      <h1 className="heading pb-10">
+      <h2 className="heading pb-10">
         {translate.title}
-      </h1>
+      </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projectsList.map((item) => (
           <div
@@ -49,9 +49,9 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h2 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
-              </h1>
+              </h2>
 
               <p
                 className="lg:text-xl dark:text-slate-500 text-slate-600 lg:font-normal font-light text-sm line-clamp-2"

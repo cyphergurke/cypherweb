@@ -24,7 +24,7 @@ const LegalPage = ({ params }: { params: { locale: any } }) => {
                     <p>Umsatzsteuer-Identifikationsnummer (USt-IdNr.): {process.env.UST_NR}</p>
                 </div>
                 <header className="mb-8">
-                    <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Datenschutzerklärung </h1>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Datenschutzerklärung </h2>
                 </header>
             </div>
             {params.locale === "en" ? <LegalDE /> : <LegalEN />}

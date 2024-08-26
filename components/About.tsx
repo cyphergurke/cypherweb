@@ -37,7 +37,7 @@ const About = () => {
     return (
         <section id="about" >
             <LampContainer>
-                <motion.h1
+                <motion.h2
                     initial={{ opacity: 0.5, y: 150 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -48,7 +48,7 @@ const About = () => {
                     className="bg-gradient-to-br from-slate-300 to-slate-400  bg-clip-text text-center text-4xl font-medium tracking-tight dark:text-transparent md:text-7xl -mt-44 lg:-mt-56"
                 >
                     {translate.title}
-                </motion.h1>
+                </motion.h2>
             </LampContainer>
             <TracingBeam className="px-6 -mt-72 mb-32 ">
                 {paragraphs}
