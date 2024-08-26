@@ -13,7 +13,7 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 
 
-const MobileMenu = ({ params }: { params: { locale: any } }) => {
+const MobileMenu = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [hasBackground, setHasBackground] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
