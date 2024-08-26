@@ -13,7 +13,7 @@ jobs:
       image: node:lts-alpine
 
     steps:
-    - name: Install SSH Client and Dependencies
+      - name: Install SSH Client and Dependencies
         run: apk add --no-cache openssh
       
       - name: Checkout code
