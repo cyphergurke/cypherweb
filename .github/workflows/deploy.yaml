@@ -43,7 +43,7 @@ jobs:
           UST_NR: ${{ secrets.UST_NR }}
         run: |
           ssh -o StrictHostKeyChecking=no vegeta@${{ secrets.VEGETA_SERVER_IP }} << 'EOF'
-            cd /hosting/cypherweb
+            cd ~/hosting/cypherweb
             git pull origin main
             echo "EMAIL_ADDRESS=${{ secrets.EMAIL_ADDRESS }}" > .env.local
             echo "EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}" >> .env.local
