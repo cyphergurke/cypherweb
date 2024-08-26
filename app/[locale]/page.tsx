@@ -1,5 +1,3 @@
-import { navItems, workExperience } from "@/data";
-
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";

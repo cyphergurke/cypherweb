@@ -24,7 +24,7 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
 
         </p>
-        <a href="mailto:david.witten@cypherweb.dev">
+        <a href={`mailto:${process.env.EMAIL_ADDRESS}`} >
           <MagicButton
             title={f('getintouch')}
             icon={<FaLocationArrow />}
@@ -37,14 +37,19 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light">
           No Copyright ©
         </p>
-        <Link href={`${locale}/legal`} className="text-violet-500">Impressum & Privacy Policies</Link>
+        <Link href={`${locale}/legal`} className="text-violet-500">Impressum </Link>
+        <Link href={`${locale}/legal`} className="text-violet-500"> Legal </Link>
+        <Link href={`${locale}/legal`} className="text-violet-500"> Privacy Policies</Link>
+
         <div className="flex items-center md:gap-3 gap-6 pt-5">
           {socialMedia.map((info) => (
             <div
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <Image src={info.img} alt="icons" width={40} height={40} />
+              <Link href={info.link} target="_blank">
+                <Image src={info.img} alt="icons" width={40} height={40} />
+              </Link>
             </div>
           ))}
         </div>

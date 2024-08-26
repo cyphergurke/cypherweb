@@ -12,6 +12,9 @@ import { ModeToggle } from "./ModeToggle";
 import LanguageToggle from "./LanguageToggle";
 import { useTranslations } from "next-intl";
 import { navItems } from "@/data";
+import { useLocale } from 'next-intl';
+
+
 
 export const FloatingNav = ({
   className,
@@ -20,6 +23,7 @@ export const FloatingNav = ({
 }) => {
   const [visible, setVisible] = useState(true);
   const { scrollYProgress } = useScroll();
+  const locale = useLocale();
 
   const h = useTranslations('Hero');
   const heroTranslations = {
@@ -31,9 +35,12 @@ export const FloatingNav = ({
     navContact: h('navigation.contact'),
     buttonText: h('buttonText'),
     language: h('language'),
+    locale: locale
   };
   const navigationItems = navItems(heroTranslations)
 
+
+  // animation to hide the navigation on scrolling down
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;

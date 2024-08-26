@@ -1,10 +1,10 @@
 
 export const navItems = (translation: any) => {
   return [
-    { name: translation.navHome, link: "#home" },
-    { name: translation.navAbout, link: "#about" },
-    { name: translation.navprojects, link: "#projects" },
-    { name: translation.navContact, link: "#contact" },
+    { name: translation.navHome, link: `/${translation.locale}/#home ` },
+    { name: translation.navAbout, link: "/#about" },
+    { name: translation.navprojects, link: "/#projects" },
+    { name: translation.navContact, link: "/#contact" },
   ];
 }
 

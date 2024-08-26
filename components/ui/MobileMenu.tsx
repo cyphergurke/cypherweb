@@ -8,15 +8,20 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import LanguageToggle from './LanguageToggle';
 import { ModeToggle } from './ModeToggle';
-import { navItems } from '@/data';
+import { navItems, socialMedia } from '@/data';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 
 
-const MobileMenu = () => {
+const MobileMenu = ({ params }: { params: { locale: any } }) => {
     const [isVisible, setIsVisible] = useState(true);
     const [hasBackground, setHasBackground] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isOpen, setIsOpen] = React.useState(false);
+    const locale = useLocale();
+
+
+
     const h = useTranslations('Hero');
     const translate = {
         title: h('title'),
@@ -27,6 +32,7 @@ const MobileMenu = () => {
         navContact: h('navigation.contact'),
         buttonText: h('buttonText'),
         language: h('language'),
+        locale: locale
     };
     const translatedNavItems = navItems(translate)
 
@@ -79,20 +85,35 @@ const MobileMenu = () => {
                             Cypherweb Development
                         </SheetTitle>
 
-                        <SheetDescription className="  h-screen  flex flex-col gap-y-10  text-center w-full  pt-20">
-                            {translatedNavItems.map((navItem: any, idx: number) => (
-                                <Link
-                                    key={`link=${idx}`}
-                                    href={navItem.link}
-                                    className={cn(
-                                        "relative  text-white items-center  flex space-x-1    dark:hover:text-neutral-300 hover:text-neutral-500"
-                                    )}
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    <span className="block sm:hidden">{navItem.icon}</span>
-                                    <span className=" text-sm !cursor-pointer">{navItem.name}</span>
-                                </Link>
-                            ))}
+                        <SheetDescription className="  h-full  flex flex-col  text-center ">
+                            <div className=" flex flex-col gap-y-10  text-center w-full  pt-20">
+
+                                {translatedNavItems.map((navItem: any, idx: number) => (
+                                    <Link
+                                        key={`link=${idx}`}
+                                        href={navItem.link}
+                                        className={cn(
+                                            "relative  text-white items-center  flex space-x-1    dark:hover:text-neutral-300 hover:text-neutral-500"
+                                        )}
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        <span className="block sm:hidden">{navItem.icon}</span>
+                                        <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+                                    </Link>
+                                ))}
+                            </div>
+                            <div className="h-full flex  gap-6 mt-[80%]">
+                                {socialMedia.map((info) => (
+                                    <div
+                                        key={info.id}
+                                        className="w-10 h-10 cursor-pointer  "
+                                    >
+                                        <Link href={info.link} target="_blank">
+                                            <Image src={info.img} alt="icons" width={40} height={40} />
+                                        </Link>
+                                    </div>
+                                ))}
+                            </div>
                         </SheetDescription>
                     </SheetHeader>
                 </SheetContent>
