@@ -13,6 +13,9 @@ jobs:
       image: node:lts-alpine
 
     steps:
+    - name: Install SSH Client and Dependencies
+        run: apk add --no-cache openssh
+      
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -55,7 +58,7 @@ jobs:
             echo "ADDR_ZIP_AND_CITY=${{ secrets.ADDR_ZIP_AND_CITY }}" >> .env.local
             echo "PHONE_NUMBER=${{ secrets.PHONE_NUMBER }}" >> .env.local
             echo "UST_NR=${{ secrets.UST_NR }}" >> .env.local
-            npm install
+            npm i --legacy-peer-deps
             npm run build
             pm2 reload cypherweb --update-env
           EOF
