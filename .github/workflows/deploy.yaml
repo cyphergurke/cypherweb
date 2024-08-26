@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Install SSH Client and Dependencies
         run: apk add --no-cache openssh
+
+      - name: Install PNPM
+        run: npm install -g pnpm
       
       - name: Checkout code
         uses: actions/checkout@v2
@@ -23,10 +26,10 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install dependencies
-        run: npm i --legacy-peer-deps
+        run: pnpm install
 
       - name: Build the application
-        run: npm run build
+        run: pnpm run build
 
       - name: Add SSH Key
         uses: webfactory/ssh-agent@v0.5.3
@@ -58,7 +61,7 @@ jobs:
             echo "ADDR_ZIP_AND_CITY=${{ secrets.ADDR_ZIP_AND_CITY }}" >> .env.local
             echo "PHONE_NUMBER=${{ secrets.PHONE_NUMBER }}" >> .env.local
             echo "UST_NR=${{ secrets.UST_NR }}" >> .env.local
-            npm i --legacy-peer-deps
-            npm run build
+            pnpm install
+            pnpm run build
             pm2 reload cypherweb --update-env
           EOF

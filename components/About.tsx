@@ -58,7 +58,7 @@ const About = () => {
                             key={info.id}
                             className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
                         >
-                            <Link href={info.link}>
+                            <Link href={info.link} target="_blank">
                                 <Image src={info.img} alt="icons" width={40} height={40} />
                             </Link>
                         </div>

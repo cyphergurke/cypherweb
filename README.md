@@ -5,19 +5,19 @@
 
 ```bash
 # install dependencies
-npm i --legacy-peer-deps
+ppnpm install
 
 # start in development mode
-npm run dev 
+pnpm run dev 
 
 # build
-npm run build
+pnpm run build
 
 # start build
-npm run start
+pnpm run start
 
 # start with pm2
-pm2 start npm --name "portfolio" -- run start -- -p 4000
+pm2 start pnpm --name "portfolio" -- run start -- -p 4000
 ```
 
 
@@ -39,12 +39,12 @@ apt-get install pm2
 # clone the repository, install the dependencies with 
 git clone https://github.com/cyphergurke/cypherweb.git
 
-npm i --legacy-peer-deps
+pnpm install
 
 # make sure that the environment variable are set correctly in .env.local
 
-npm run build
+pnpm run build
 
-pm2 start npm --name "portfolio" -- run start -- -p 4000
+pm2 start pnpm --name "portfolio" -- run start -- -p 4000
 ```
 
