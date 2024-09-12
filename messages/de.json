@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Cypherweb Development",
-    "subTitle": "Hallo, ich bin David, ein leidenschaftlicher und engagierter Softwareentwickler aus Deutschland, spezialisiert auf die Entwicklung moderner Webanwendungen mit neuesten Technologien.",
+    "subTitle": "Hallo, ich bin David - Fullstack-Entwickler aus Deutschland. Ich entwickle moderne Webanwendungen, mit TypeScript, React.js, Next.js und Nest.js - von barrierefreien Benutzeroberflächen bis hin zu robusten Backends.",
     "navigation": {
       "home": "Home",
       "about": "Über Mich",
@@ -13,7 +13,7 @@
   },
   "About": {
     "title": "Über Mich",
-    "text": "Ich bin David Witten, 30 Jahre alt und lebe im Herzen Deutschlands. \n\nAnfang 2017 entdeckte ich meine Leidenschaft für Softwareentwicklung, als ich Bitcoin kennenlernte und begann, Webentwicklung zu erlernen. Von 2018 bis 2022, parallel zu meinem Studium der Physikalischen Technologien (B.Eng.), entwickelte ich zahlreiche Webanwendungen, um mich in moderner React.js- und Next.js-Webentwicklung weiterzubilden, sowie einige Webseiten für Freunde und Familie. Im Jahr 2020 startete ich einen SaaS-Dienst, einen einzigartigen kryptografischen Service für Bitcoin-Wallets.\n\nIm Jahr 2022 trat ich eine Stelle als Blockchain Consultant und Webentwickler bei SVA System Vertrieb Alexander, einem großen deutschen IT-Systemintegrator, an. Dort kam ich mit SSI (Self-Sovereign Identity)/Digitalen Identitäten in Berührung und entwickelte mehrere Anwendungen mit Blockchain und fortschrittlichen Authentifizierungs- und Identitätsmethoden.\n\nIch bin sehr leidenschaftlich darin, neue Technologien zu erlernen, an spannenden Projekten zu arbeiten und immer auf der Suche nach Möglichkeiten, meine Fähigkeiten zu verbessern. Derzeit arbeite ich remote und konzentriere mich auf meine Projekte. Ich freue mich darauf, mit neuen Menschen zusammenzuarbeiten und zur Tech-Community beizutragen.\n\nIch verfüge über starke Kommunikations- und Problemlösungsfähigkeiten, ausgezeichnetes Zeitmanagement und ein gutes Verständnis der englischen Sprache. Außerdem bin ich ein sehr guter Zuhörer und ein großartiger Teamplayer.\n\nIm August 2024 war ich schließlich bereit, den Schritt in die Selbstständigkeit als freiberuflicher Webentwickler zu wagen.",
+    "text": "Ich bin David Witten, 30 Jahre alt und lebe im Herzen Deutschlands. \n\nAnfang 2017 entdeckte ich meine Leidenschaft für Softwareentwicklung, als ich Bitcoin kennenlernte und begann, Webentwicklung zu erlernen. Von 2018 bis 2022, parallel zu meinem Studium der Physikalischen Technologien (B.Eng.), entwickelte ich zahlreiche Webanwendungen, um mich in moderner React.js- und Next.js-Webentwicklung weiterzubilden, sowie einige Webseiten für Freunde und Familie. Im Jahr 2020 startete ich einen SaaS-Dienst, einen einzigartigen kryptografischen Service für Bitcoin-Wallets.\n\nIm Jahr 2022 trat ich eine Stelle als Blockchain Consultant und Webentwickler bei SVA System Vertrieb Alexander, einem großen deutschen IT-Systemintegrator, an. Dort kam ich mit SSI (Self-Sovereign Identity)/Digitalen Identitäten in Berührung und entwickelte mehrere Anwendungen mit Blockchain und fortschrittlichen Authentifizierungs- und Identitätsmethoden.\n\nIch bin sehr leidenschaftlich darin, neue Technologien zu erlernen, an spannenden Projekten zu arbeiten und immer auf der Suche nach Möglichkeiten, meine Fähigkeiten zu verbessern. Derzeit arbeite ich remote und konzentriere mich auf meine Projekte. Ich freue mich darauf, mit neuen Menschen zusammenzuarbeiten und zur Tech-Community beizutragen.\n\nIch verfüge über starke Kommunikations- und Problemlösungsfähigkeiten, ausgezeichnetes Zeitmanagement und ein gutes Verständnis der englischen Sprache. Außerdem bin ich ein sehr guter Zuhörer und ein großartiger Teamplayer.\n\n Im August 2024 war ich schließlich bereit, den Schritt in die Selbstständigkeit als freiberuflicher Webentwickler zu wagen. Wenn Sie nach einem erfahrenen Entwickler suchen, der innovative Lösungen bietet und Ihr Unternehmen digital voranbringen kann, freue ich mich darauf, von Ihnen zu hören und gemeinsam neue Erfolge zu erzielen.",
     "communication": "Ich lege großen Wert auf die Zusammenarbeit mit meinen Kunden und fördere offene Kommunikation",
     "timeZones": "Ich bin sehr flexibel, was die Kommunikation in verschiedenen Zeitzonen angeht",
     "techStack": "Ich versuche ständig, meinen tech stack zu verbessern",
@@ -43,7 +43,7 @@
     },
     "consultant": {
       "title": "Blockchain/SSI Consultant & Developer",
-      "desc": "Als Blockchain Consultant und Fullstack Entwickler ber der SVA habe ich innovative Authentifizierungs und Digitalen Identitäten Methoden (Smart Contracts und SSI/DID) in Webanwendungen erprobt und in Kunden Projekten integriert."
+      "desc": "Als Blockchain Consultant und Fullstack-Entwickler ber der SVA habe ich innovative Authentifizierungs und Digitalen Identitäten Methoden (Smart Contracts und SSI/DID) in Webanwendungen erprobt und in Kunden Projekten integriert."
     },
     "freelancer": {
       "title": "Fullstack Web Entwickler",

@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { InfiniteMovingCards } from "./InfiniteCards";
 
 export const BentoGrid = ({
   className,
@@ -49,9 +50,10 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["NestJS", "NextJS", "MongoDB"];
-
+  const frameworks = ["ReactJS", "Express", "Typescript", "NestJS", "NextJS"];
+  const databases = ["MongoDB", "GraphQL", "MySQL"];
+  const stylelibs = ["CSS / CSS3", "SCSS / SASS", "TailwindCSS", "Bootstrap 5", "MaterialUI"]
+  const libs = ["Ether.js", "Web3.js", "bitcoinjs-lib", "Chart.js", " Three.js", "framer motion"]
   const [copied, setCopied] = useState(false);
 
 
@@ -113,37 +115,16 @@ export const BentoGridItem = ({
           </div>
 
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg  lg:text-3xl max-w-96 font-bold z-10`}
           >
             {title}
           </div>
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+            <div className="flex gap-1  flex-col lg:gap-5 w-fit -right-3 lg:-right-2">
+              <InfiniteMovingCards speed="normal" items={frameworks} />
+              <InfiniteMovingCards speed="normal" items={stylelibs} direction="right" />
+              <InfiniteMovingCards speed="normal" items={databases} />
+              <InfiniteMovingCards speed="normal" items={libs} direction="right" />
             </div>
           )}
           {id === 6 && (
