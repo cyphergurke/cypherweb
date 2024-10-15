@@ -82,7 +82,7 @@ export const projects = (translation: any) => {
       des: translation.BitcoinVanityDesc,
       img: "/vanity-project.png",
       iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg"],
-      link: "https://vanity-test.bitcoin-uni.de/de",
+      link: "https://vanity-address.bitcoin-uni.de/en",
     },
     {
       id: 2,
